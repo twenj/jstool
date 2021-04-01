@@ -44,6 +44,8 @@ const ajax = (url, options) => {
   p.ERROR_REQUEST = ERROR_REQUEST;
   p.ERROR_TIMEOUT = ERROR_TIMEOUT;
   p.ERROR_ABORT = ERROR_ABORT;
+
+  return p;
 }
 
 const get = (url, options) => {
