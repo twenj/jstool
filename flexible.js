@@ -1,3 +1,6 @@
+/**
+ * 移动端屏幕适配
+ */
 (function() {
   'use strict';
   const docEl = document.documentElement;
