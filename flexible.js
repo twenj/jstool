@@ -32,7 +32,6 @@
   function setRemUnit() {
     const ratio = 18.75;
     let viewWidth = docEl.getBoundingClientRect().width || window.innerWidth;
-    console.log(viewWidth);
     if (minWidth && (viewWidth / dpr  < minWidth)) {
       viewWidth = minWidth * dpr;
     } else if (maxWidth && (viewWidth / dpr > maxWidth)) {
