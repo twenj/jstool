@@ -1,4 +1,4 @@
-function deepClone (obj) {
+function deepClone(obj) {
   if (typeof obj !== 'object' || obj == null) {
     return obj;
   }
@@ -11,7 +11,9 @@ function deepClone (obj) {
   }
 
   for (const key in obj) {
-    result[key] = deepClone(obj[key]);
+    if (obj.hasOwnProperty(key)) {
+      result[key] = deepClone(obj[key]);
+    }
   }
 
   return result;
